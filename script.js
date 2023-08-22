@@ -1,3 +1,5 @@
+window.addEventListener("DOMContentLoaded", (event) => {
+
 gsap.registerPlugin(ScrollTrigger, Flip);
 
 // LOADER ANIMATION
@@ -114,4 +116,5 @@ ScrollTrigger.batch(".grid_overview-card, .infowrapper.is-ressources", {
   end: "top center",
   once: true,
   onEnter: (batch) => gsap.to(batch, { opacity: 1, stagger: 0.15, duration: 1 })
+});
 });
